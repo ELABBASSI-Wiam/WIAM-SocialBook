@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WIAM SocialBook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d549e093a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><img src="images/notification.png"></li>
+                <li><img src="images/inbox.png"></li>
+                <li><img src="images/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile.pic.jpg">
+            </div>
+        </div>
+        <!------------settings-menu------------>
+        <div class="settings-menu">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile.pic.jpg">
+                    <div>
+                        <p>WIAM ELABBASSI</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Lougout <img src="images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!------------left-sidebar------------>
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><i class="fa-regular fa-newspaper fa-rotate-by" style="color: #f08080;"></i> Latest News</a>
+                <a href="#"><i class="fa-solid fa-user-group fa-rotate-by" style="color: #f08080;"></i> Friends</a>
+                <a href="#"><i class="fa-solid fa-users-line" style="color: #f08080;"></i> Group</a>
+                <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #f08080;"></i> Marketplace</a>
+                <a href="#"><i class="fa-solid fa-tv" style="color: #f08080;"></i> Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="images/shortcut-1.jpg">Accessories and Jewelry Design</a>
+                <a href="#"><img src="images/shortcut-2.jpg">Fashion Design and Styling</a>
+                <a href="#"><img src="images/shortcut-3.jpg">It's not about brand, it's about style</a>
+                <a href="#"><img src="images/shortcut-4.jpg">WEA design</a>
+            </div>
+        </div>
+        <!------------main-content------------>
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/circle-plus-solid.svg">
+                    <p>Add Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.jpg">
+                    <p>Aya</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.jpg">
+                    <p>Sara</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.jpg">
+                    <p>Nesrine</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.jpg">
+                    <p>Khadija</p>
+                </div>
+            </div>
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile.pic.jpg">
+                    <div>
+                        <p>WIAM ELABBASSI</p>
+                        <small>Public <i class="fas fa-sort-down"></i></small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, WIAM?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><i class="fa-solid fa-video" style="color: #f08080;"></i>Live Video</a>
+                        <a href="#"><i class="fa-solid fa-camera-retro" style="color: #f08080;"></i>Photo/Video</a>
+                        <a href="#"><i class="fa-regular fa-face-smile" style="color: #f08080;"></i>Feling/Activity</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile.pic.jpg">
+                        <div>
+                            <p>WIAM ELABBASSI</p>
+                            <span>February 03 2023, 07:40 a.m</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">The Beauty of the moment. <a href="#">#RAIN</a>
+                    <a href="#">#FLOWERS</a>
+                </p>
+                <img src="images/feed-image-1.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i class="fa-solid fa-thumbs-up" style="color: #f08080;"></i>120</div>
+                        <div><img src="images/comments.png">45</div>
+                        <div><img src="images/share.png">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile.pic.jpg">
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile.pic.jpg">
+                        <div>
+                            <p>WIAM ELABBASSI</p>
+                            <span>May 04 2023, 04:40 a.m</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">When you wake up with no other intention but worship to allah, you have found the
+                    purpose of life .. <a href="#">#FAJR</a>
+                    <a href="#">#QURAN</a>
+                </p>
+                <img src="images/feed-image-2.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i class="fa-solid fa-thumbs-up" style="color: #f08080;"></i>320</div>
+                        <div><img src="images/comments.png">73</div>
+                        <div><img src="images/share.png">209</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile.pic.jpg">
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile.pic.jpg">
+                        <div>
+                            <p>WIAM ELABBASSI</p>
+                            <span>March 16 2023, 13:40 p.m</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">COFFEE is A dark, magical substance that turns "Leave me alone" into "Good morning
+                    honey". <a href="#">#COFFEE</a>
+                    <a href="#">#HAPPINESS</a>
+                </p>
+                <img src="images/feed-image-3.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png">120</div>
+                        <div><img src="images/comments.png">45</div>
+                        <div><img src="images/share.png">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile.pic.jpg">
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile.pic.jpg">
+                        <div>
+                            <p>WIAM ELABBASSI</p>
+                            <span>January 20 2023, 10:15 a.m</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">White Magic And is there, In a mouthful of winter awe. That magic and warmth,
+                    coexist. <a href="#">#WINTER</a>
+                    <a href="#">#MAGIC</a>
+                </p>
+                <img src="images/feed-image-4.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png">120</div>
+                        <div><img src="images/comments.png">45</div>
+                        <div><img src="images/share.png">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile.pic.jpg">
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile.pic.jpg">
+                        <div>
+                            <p>WIAM ELABBASSI</p>
+                            <span>March 25 2023, 17:03 p.m</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">SPRING: a lovely reminder of how beatiful change can be. <a href="#">#FLOWERS</a>
+                    <a href="#">#SPRING</a>
+                </p>
+                <img src="images/feed-image-5.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png">120</div>
+                        <div><img src="images/comments.png">45</div>
+                        <div><img src="images/share.png">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile.pic.jpg">
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="load-more-btn"> Load More</button>
+        </div>
+        <!------------right-sidebar------------>
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Rome</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Fashion Week</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Milano</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.jpg" class="sidebar-ads">
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.jpg">
+                </div>
+                <p>Aya</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/profile.pic.jpg">
+                </div>
+                <p>WIAM ELABBASSI</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.jpg">
+                </div>
+                <p>Nesrine</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright @ 2023 - First Projuct</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
